@@ -33,7 +33,7 @@ my income is 50000
 I spent 10000 rent
 show balance
 show table
-
+```
 ## 🛠 Technologies Used
 
 - 🐍 Python — core programming language  
