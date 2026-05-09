@@ -55,7 +55,7 @@ Run this first cell in Google Colab:
 
 ```python
 !pip install pyTelegramBotAPI
-
+```
 
 ## 💾 2. Set up data storage system
 
@@ -77,6 +77,7 @@ def load_data():
 def save_data(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=4)
+```
 
 ## 📌 Purpose of this system
 
@@ -93,6 +94,7 @@ In your main code cell:
 
 ```python
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+```
 Replace `YOUR_TELEGRAM_BOT_TOKEN` with your real token from BotFather.
 
 ### 4. Run the bot
@@ -109,6 +111,7 @@ After running all cells, the bot will start automatically and will show:
 
 ```text
 💎 SMART FINANCE AI IS RUNNING...
+```
 
 
 ## 💬 5. How to Use the Bot
@@ -125,6 +128,7 @@ show table
 50% of 50000
 advice
 I earned 50000 and spent 10000 and show balance
+```
 
 ## 🤖 Bot Behavior
 
