@@ -1,22 +1,22 @@
-# 💎 Smart Finance AI Assistant
+#  Smart Finance AI Assistant
 
 AI-powered Telegram bot for personal finance management.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 💰 Income tracking
-- 💸 Expense tracking
-- 📊 Financial analytics
-- 🧮 Percentage calculator
-- 🧠 AI financial advice
-- 🔥 Multi-command processing
-- 🤖 Natural language interaction
+-  Income tracking
+-  Expense tracking
+-  Financial analytics
+-  Percentage calculator
+-  AI financial advice
+-  Multi-command processing
+-  Natural language interaction
 
 ---
 
-## 💬 Example Commands
+##  Example Commands
 
 ```text
 my income is 50000
