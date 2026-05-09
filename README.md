@@ -1,67 +1,67 @@
-# 💎 Smart Finance AI Assistant
+# Smart Finance AI Assistant
 
 AI-powered Telegram bot for personal finance tracking and analysis.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
-Smart Finance AI Assistant is a Telegram-based chatbot that helps users manage personal finances using natural language input.
+Smart Finance AI Assistant is a Telegram-based chatbot designed to assist users in managing personal finances through natural language input.
 
-Instead of strict formats, users can write messages naturally, and the bot understands them.
-
----
-
-## ✨ Key Features
-
-- 💰 Income tracking
-- 💸 Expense tracking
-- 📊 Balance calculation
-- 🧮 Percentage calculator
-- 🧠 AI-style financial advice
-- 🔥 Multi-command message processing
-- 💬 Natural language understanding
+The system interprets informal user messages and converts them into structured financial records without requiring strict input formats.
 
 ---
 
-## 💬 Example Inputs
+## Key Features
 
-Users can interact naturally:
+- Income tracking  
+- Expense tracking  
+- Balance calculation  
+- Percentage-based calculations  
+- Financial advice generation  
+- Multi-command message processing  
+- Natural language understanding  
+
+---
+
+## Example Inputs
 
 ```text
 my income is 50000
 I spent 10000 rent
 show balance
 show table
+50% of 50000
+advice
+I earned 50000 and spent 10000 and show balance
 ```
-## 🛠 Technologies Used
+---
 
-- 🐍 Python — core programming language  
-- 🤖 Telegram Bot API — chatbot integration  
-- 💾 JSON — lightweight data storage system  
-- 🔍 Regex — natural language pattern recognition  
-- 📓 Google Colab — development environment  
-- 🧑‍💻 GitHub — version control and project hosting
-
-## ⚙️ How to Run the Project
-
-This project is a Telegram-based AI finance assistant running in Google Colab.
+## Technologies Used
+- Python — core programming language
+- Telegram Bot API — chatbot integration
+- JSON — lightweight data storage system
+- Regular Expressions (Regex) — text pattern recognition
+- Google Colab — development environment
+- GitHub — version control and project hosting
 
 ---
 
-### 1. Install dependencies
+## Installation and Setup
 
-Run this first cell in Google Colab:
+The project is implemented as a Telegram-based bot executed in Google Colab.
 
-```python
+# 1. Install dependencies
+```
 !pip install pyTelegramBotAPI
 ```
 
-## 💾 2. Set up data storage system
+---
 
-Your second cell creates a local JSON-based database system.
+# 2. Data storage system
 
-```python
+A JSON-based local storage system is used for saving user financial data.
+```
 import json
 from datetime import datetime
 
@@ -79,115 +79,25 @@ def save_data(data):
         json.dump(data, f, indent=4)
 ```
 
-## 📌 Purpose of this system
+---
 
-This storage system is used to save user financial data locally:
+# 3. Telegram Bot Token configuration
 
-💰 Income records  
-💸 Expense records  
-📊 Full financial history per user
-
-
-## 3. Add Telegram Bot Token
-
-In your main code cell:
-
-```python
+The bot requires a valid Telegram Bot API token:
+```
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 ```
-Replace `YOUR_TELEGRAM_BOT_TOKEN` with your real token from BotFather.
-
-### 4. Run the bot
-
-In Google Colab:
-
-Run ALL cells in order:
-
-- Install libraries  
-- Data storage functions  
-- Main bot code  
-
-After running all cells, the bot will start automatically and will show:
-
-```text
-💎 SMART FINANCE AI IS RUNNING...
-```
-
-
-## 💬 5. How to Use the Bot
-
-After running the project, open Telegram and start chatting with your bot.
-
-You can write natural language messages like:
-
-```text
-my income is 50000
-I spent 10000 rent
-show balance
-show table
-50% of 50000
-advice
-I earned 50000 and spent 10000 and show balance
-```
-
-## 🤖 Bot Behavior
-
-The bot will automatically:
-
-- 💰 detect income and expenses  
-- 📊 calculate balance  
-- 🧠 analyze spending patterns  
-- 🧠 give AI-style financial advice  
-- 🔥 handle multiple commands in one message  
+The token must be obtained from BotFather.
 
 ---
 
-## ⚠️ Important Notes
+# 4. Running the system
 
-- Keep Google Colab session running while using the bot  
-- If Colab stops, the bot will go offline  
-- Data is stored temporarily in `data.json`  
+All notebook cells must be executed sequentially in Google Colab:
 
-## 📊 System Logic
+Library installation
+Data storage initialization
+Bot logic execution
 
-The bot processes natural language inputs and converts them into structured financial records:
+Upon successful execution, the system enters an active state.
 
-- Detects income and expenses using keyword recognition  
-- Extracts numeric values using regex  
-- Stores data in JSON format  
-- Performs real-time calculations and summaries  
-
----
-
-## 🧠 AI Concept
-
-Although no external AI API is used, the bot simulates AI behavior using:
-
-- Natural language parsing  
-- Multi-command interpretation  
-- Context-aware responses  
-- Rule-based decision logic  
-
----
-
-## 📌 Future Improvements
-
-- Integration with real AI models (e.g., OpenAI API)  
-- Data visualization (charts and graphs)  
-- User authentication system  
-- Mobile application version
-
-## 📄 Project Summary
-
-This project was developed as part of an Introduction to Programming course to demonstrate practical application of:
-
-- Python programming  
-- Data handling  
-- Natural language processing concepts  
-- Real-world problem solving  
-
----
-
-## 👩‍💻 Author
-
-Diana Sarsenbay
