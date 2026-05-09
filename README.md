@@ -51,14 +51,14 @@ I earned 50000 and spent 10000 and show balance
 
 The project is implemented as a Telegram-based bot executed in Google Colab.
 
-# 1. Install dependencies
+## 1. Install dependencies
 ```
 !pip install pyTelegramBotAPI
 ```
 
 ---
 
-# 2. Data storage system
+## 2. Data storage system
 
 A JSON-based local storage system is used for saving user financial data.
 ```
@@ -81,7 +81,7 @@ def save_data(data):
 
 ---
 
-# 3. Telegram Bot Token configuration
+## 3. Telegram Bot Token configuration
 
 The bot requires a valid Telegram Bot API token:
 ```
@@ -91,7 +91,7 @@ The token must be obtained from BotFather.
 
 ---
 
-# 4. Running the system
+## 4. Running the system
 
 All notebook cells must be executed sequentially in Google Colab:
 
@@ -101,3 +101,66 @@ Bot logic execution
 
 Upon successful execution, the system enters an active state.
 
+---
+
+# Usage
+
+After activation, the bot operates through Telegram and processes natural language financial commands such as:
+
+```
+my income is 50000
+I spent 10000 rent
+show balance
+show table
+50% of 50000
+advice
+```
+
+---
+
+# System Behavior
+
+The system automatically performs the following operations:
+
+- Identification of income and expense statements
+- Extraction of numerical values using pattern recognition
+- Storage of structured financial data in JSON format
+- Real-time calculation of balances and percentages
+- Generation of rule-based financial recommendations
+- Processing of multiple commands within a single input
+
+---
+
+# System Architecture
+
+The system is based on a rule-based natural language processing approach. No external AI API is used. Instead, logic-based parsing and keyword detection simulate intelligent behavior.
+
+Core mechanisms include:
+
+- Text preprocessing
+- Keyword classification
+- Regular expression parsing
+- Conditional logic for decision-making
+
+---
+
+# Future Improvements
+- Integration with external AI models for enhanced natural language understanding
+- Data visualization through charts and graphs
+- User authentication system
+- Persistent cloud database integration
+- Mobile application extension
+
+---
+
+# Project Summary
+
+The project demonstrates the application of Python programming, data processing techniques, and natural language processing principles in the development of a functional financial assistant system.
+
+The system is designed to simulate intelligent behavior through structured logic and rule-based processing.
+
+---
+
+# Author
+
+Diana Sarsenbay
